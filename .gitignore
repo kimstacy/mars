@@ -1,0 +1,5 @@
+# Sys Files
+.DS_Store
+
+# Dependency Dirs
+node_modules/

@@ -11,33 +11,73 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
     <style>
         model-viewer {
-            width: 420px;
-            height: 420px;
+            width: 600px;
+            height: 600px;
             margin: 0 auto;
         }
     </style>
 </head>
 
 <body>
-    <div class="section">
-        <div id="landing" class="flex-row">
-            <div class="flex-col-sm-12">
-                <h1>Humanity hasn’t always been a multiplanetary species.</h1>
+    <div class="container">
+        <div class="section section1">
+            <h1>Humanity hasn’t always been a multiplanetary species.</h1>
+        </div>
+
+        <div class="section section2">
+            <p>66 years ago, we first landed on Mars.</p>
+        </div>
+
+        <div class="nested">
+            <div class="section3">
+                <p>It was the year 2033.</p>
+            </div>
+
+            <div class="section4">
+                <p>With the turmoil of the first 3rd of the century behind us, we pushed the boundaries and landed far.
+                </p>
             </div>
         </div>
-    </div>
 
-    <div class="flex-row">
-        <div class="flex-col-sm-12">
-            <model-viewer src="assets/Mars.glb" alt="A 3D model of Mars" auto-rotate camera-controls></model-viewer>
+        <div class="section section5">
+            <p>140 million miles far, to be exact.</p>
         </div>
+
+        <div class="section section6 nested-2">
+            <p class="title-pt-1">The History of the 2033</p>
+            <p class="title-pt-2">MARS LANDING</p>
+            <div class="planet">
+                <div class="model">
+                    <model-viewer src="assets/Mars.glb" alt="A 3D model of Mars" auto-rotate camera-controls>
+                    </model-viewer>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section7">
+            <p>So, how did we get there?</p>
+        </div>
+
+        <!-- <div class="section section8">
+            <p>CURIOSITY</p>
+            <div class="rover">
+                <div class="model">
+                    <model-viewer src="assets/Perseverance.glb" alt="A 3D model of Mars" auto-rotate
+                        camera-controls>
+                    </model-viewer>
+                </div>
+            </div>
+        </div> -->
+
     </div>
 </body>
+
 </html>
